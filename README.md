@@ -86,7 +86,7 @@ rabbitmq-server
 export TOKENIZERS_PARALLELISM=false
 python3 app.py
 ```
-Then open 👉 [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+Then open  [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ---
 
@@ -159,6 +159,4 @@ rabbitmqctl status
 - Check `query_counts.json` for theme counts.
 - Verify `app.py` logs for `save_analytics()`.
 
----
 
-## 🎉 Done!
