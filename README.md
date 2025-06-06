@@ -1,16 +1,16 @@
-# 🤖✨ AI Customer Support Agent - An Agentic Multimodal RAG Application 🚀🌌
+#  AI Customer Support Agent - An Agentic Multimodal RAG Application 
 
 A **Flask-based chatbot** powered by **RAG (Retrieval-Augmented Generation)** for customer support, featuring **multimodal inputs (text, image, speech)** 🅰, **multilingual magic** 🌍, **dynamic FAQ uploads** , **query analytics** 📊, and **ticket escalation** via **RabbitMQ** 🐇. The UI rocks a sleek, cosmic dark theme with sparkling animations .
 
 ---
 
-## 🌟 Demo Video Link :
+##  Demo Video Link :
 
 [Link](https://drive.google.com/file/d/11sBW-u0XXArfYTVrJadwa-Ock5k261JB/view?usp=sharing)
 
 ---
 
-## 🌟 Features
+##  Features
 
 - **RAG Chatbot:** Answers queries using FAISS + Cohere’s free API.
 - **Text-to-Speech (TTS):** Speaks responses when speech mode is enabled.
@@ -20,7 +20,7 @@ A **Flask-based chatbot** powered by **RAG (Retrieval-Augmented Generation)** fo
 - **Dynamic FAQs:** Upload new `faq.txt` files to update responses instantly.
 - **Analytics Sidebar:** Tracks query frequency live with theme cards (Order Tracking, Returns, Support Contact, Other).
 - **Escalation System:** Routes complex queries to RabbitMQ and logs them in `tickets.json`.
-- **Cosmic UI:** Dark gradient background, neon chat bubbles, sparkly animations, and clear input labels ✨.
+- **Cosmic UI:** Dark gradient background, neon chat bubbles, sparkly animations, and clear input labels .
 
 ---
 
@@ -54,7 +54,7 @@ pip install cohere==4.50 flask==2.3.3 langchain-community==0.2.0 langchain-huggi
 ```
 
 ### Configure API Key:
-- Sign up at 👉 [https://dashboard.cohere.ai/](https://dashboard.cohere.ai/), grab your free API key.
+- Sign up at  [https://dashboard.cohere.ai/](https://dashboard.cohere.ai/), grab your free API key.
 - In `app.py`, replace:
 ```python
 co = cohere.Client("your-cohere-api-key")
@@ -106,20 +106,20 @@ Then open  [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ##  Project Structure
 
-| 📄 File               | 📌 Description                                                     |
+|  File               |  Description                                                     |
 |:---------------------|:------------------------------------------------------------------|
 | `app.py`              | Flask app with RAG, Cohere, RabbitMQ, image-to-text, and speech integration. |
 | `templates/index.html`| Chat interface with text, image, and speech inputs.                |
-| `static/style.css`    | Cosmic UI styling with neon effects and sparkles ✨.               |
+| `static/style.css`    | Cosmic UI styling with neon effects and sparkles .               |
 | `static/uploads/`     | Stores uploaded images for chat display.                          |
-| `faq.txt`             | Sample FAQs database 📖.                                          |
-| `tickets.json`        | Logs for escalated queries 🚨.                                    |
-| `query_counts.json`   | JSON analytics for query frequency 📊.                            |
+| `faq.txt`             | Sample FAQs database .                                          |
+| `tickets.json`        | Logs for escalated queries .                                    |
+| `query_counts.json`   | JSON analytics for query frequency .                            |
 
 ---
 
 ## Troubleshooting
-### 🖥️ Chat or Images Not Displaying?
+### Chat or Images Not Displaying?
 - Check terminal logs and browser DevTools (F12 → Console, Network).
 - Verify images in `static/uploads/`.
 - Clear browser cache:  
@@ -143,7 +143,7 @@ brew install imagemagick
 - Check DevTools → Console for errors like _“Speech recognition error”_.
 
 ###  Cohere API Errors?
-- Verify API key at 👉 [https://dashboard.cohere.ai/](https://dashboard.cohere.ai/).
+- Verify API key at  [https://dashboard.cohere.ai/](https://dashboard.cohere.ai/).
 - Test:
 ```bash
 python -c "import cohere; co = cohere.Client('your-cohere-api-key'); print(co.check_api_key())"
@@ -155,7 +155,7 @@ python -c "import cohere; co = cohere.Client('your-cohere-api-key'); print(co.ch
 rabbitmqctl status
 ```
 
-### 📊 Analytics Not Updating?
+###  Analytics Not Updating?
 - Check `query_counts.json` for theme counts.
 - Verify `app.py` logs for `save_analytics()`.
 
